@@ -9,7 +9,7 @@
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -29,6 +29,7 @@ button {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
   border-radius: 3rem;
+  border: none;
 }
 
 :root {
@@ -48,8 +49,7 @@ button {
 .navbar {
   width: 100%;
   height: 90px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: #4e4946;
 }
 
 .navbar .navbar-section {
@@ -65,21 +65,118 @@ button {
 }
 
 .navbar .navbar-section .logo {
-  --tw-text-opacity: 1;
-  color: rgb(0 216 255 / var(--tw-text-opacity));
+  color: black;
+  text-decoration: none;
+}
+
+.navbar .navbar-section .logo:hover {
+  color: rgb(49, 43, 43);
 }
 
 /* .navbar .navbar-section .navbar-feature {
   display: none;
 } */
 @media (min-width: 768px) {
-  .md\:flex {
+  .md\:.navbar .navbar-section .navbar-feature {
     display: flex;
   }
 }
 
-.navbar .navbar-section .navbar-feature .navbar-items{
+.navbar .navbar-section .navbar-feature .navbar-items {
   display: flex;
   color: white;
   align-items: center;
 }
+
+/* Navbar for mobile */
+.navbar .navbar-section .navbar-burger {
+  display: block;
+  @media (min-width: 768px) {
+    .md\:hidden {
+      display: none;
+    }
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  transition: left 0.5s ease;
+  left: -100%;
+}
+
+.text-2xl {
+  font-size: 1.5rem /* 24px */;
+  line-height: 2rem /* 32px */;
+}
+
+.text-decor-hidden {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+
+.text-decor-hidden:hover {
+  color: rgb(49, 43, 43);
+}
+
+.btn-order {
+  margin-left: 15px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-order:hover {
+  color: rgb(49, 43, 43);
+}
+
+/* Hero Section */
+.hero-section-page {
+  width: 100%;
+  height: 90vh;
+  top: 90vh;
+}
+
+.hero-section-page .hero-section-video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+}
+
+.hero-section-page .hero-section-field {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.hero-section-page .hero-section-text {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.hero-section-page .hero-section-story {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+

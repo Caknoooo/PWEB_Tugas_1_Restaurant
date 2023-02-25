@@ -1,36 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- css -->
-  <link rel="stylesheet" href="style.css">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
 
-  <title>Restaurant</title>
-</head>
-<body>
-  <nav class="navbar">
-    <div class="navbar-section">
-      <div>
-        <h1 class="logo">
-          Coffee
-        </h1>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <title>Restaurant</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-section">
+        <div style="display: inline-flex">
+          <a href="#" class="logo"><h1>Coffee</h1></a>
+          <!-- <i class="fas fa-coffee" style="color: moccasin; font-size: x-large;"></i> -->
+        </div>
+        <div class="navbar-feature">
+          <ul class="navbar-items">
+            <li><a href="" class="text-decor-hidden">Home</a></li>
+            <li><a href="" class="text-decor-hidden">About</a></li>
+            <li><a href="" class="text-decor-hidden">Menu</a></li>
+            <li><a href="" class="text-decor-hidden">Contact</a></li>
+            <button class="btn-order">Order</button>
+          </ul>
+        </div>
+
+        <!-- Responsive navbar -->
+        <!-- <div onclick="handleNav()" class="navbar-burger">
+          <i class="text-white" id="icon"></i>
+        </div> -->
+
+        <!-- Mobile Menu -->
+        <!-- <div class="mobile-menu" id="mobileMenu">
+          <ul>
+            <li class="text-2xl">Home</li>
+            <li class="text-2xl">About</li>
+            <li class="text-2xl">Menu</li>
+            <li class="text-2xl">Contact</li>
+            <li><button style="margin: 2rem;">Order</button></li>
+          </ul>
+        </div> -->
       </div>
-      <div class="navbar-feature">
-        <ul class="navbar-items">
-          <li>Home</li>
-          <li>Menu</li>
-          <li>Community</li>
-          <li>Order</li>
-        </ul>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <div class="hero-section-page">
+        <video class="hero-section-video" autoplay loop muted>
+          <source
+            src="https://user-images.githubusercontent.com/92671053/221354605-68a74793-e3f4-437d-9662-1c7c7822b879.mp4" type='video/mp4'
+          />
+        </video>
+
+        <div class="hero-section-field">
+          <h1>Hello</h1>
+          <h1 style="padding-top: 0.5rem; padding-bottom: 0.5rem">
+            <span class="blue">Anda Peminat</span> Coffee???
+          </h1>
+
+          <p class="hero-section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aut
+            veritatis doloremque unde vitae ad eligendi placeat incidunt,
+            sapiente itaque pariatur ut illo excepturi nostrum delectus esse
+            ipsum alias omnis.
+          </p>
+
+          <div>
+            <button style="margin: 0.5rem" class="btn-order">Coffee</button>
+            <button style="margin: 0.5rem" class="btn-order">
+              Cerita tentang kopi
+            </button>
+          </div>
+
+          <div>
+            <p class="hero-section-story">
+              Coffee merupakan teman kita ketika belajar ehehehe
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
+    </main>
 
-  <button>Halo</button>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
